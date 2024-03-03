@@ -60,7 +60,7 @@ namespace CancelFavoriteVideos.Services
                     }
                     favoriteButtonElement.Click(); // 高評価取り消し
                     canceledCount++;
-                    browserManager.GoToUrl(GlobalConstant.YoutubeFavoriteVideosTopUrl); // 高評価トップページに戻る
+                    browserManager.BackUrl(); // 高評価トップページに戻る
                 }
             }
 

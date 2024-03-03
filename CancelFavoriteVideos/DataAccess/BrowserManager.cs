@@ -55,6 +55,13 @@ namespace CancelFavoriteVideos.DataAccess
             this.chromeDriver.Navigate().GoToUrl(url);
         }
 
+        // ひとつ前のURLに戻る
+        public void BackUrl()
+        {
+            CheckDriverInstance();
+            this.chromeDriver.Navigate().Back();
+        }
+
         // 現在のURL取得
         public string GetCurrentUrl()
         {

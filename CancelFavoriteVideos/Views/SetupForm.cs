@@ -83,9 +83,7 @@ namespace CancelFavoriteVideos.Views
             try
             {
                 cancelForm = new CancelForm(this.currentChromProfile);
-                this.Visible = false;
                 cancelForm.ShowDialog();
-                this.Visible = true;
             }
             finally
             {
